@@ -4,7 +4,7 @@
     { "source": "/talks/devcon2025", "destination": "/talks/devcon2025/", "permanent": false }
   ],
   "rewrites": [
-    { "source": "/talks/devcon2025/", "destination": "https://erc1202-talks.vercel.app" },
+    { "source": "/talks/devcon2025/", "destination": "https://erc1202-talks.vercel.app/" },
     { "source": "/talks/devcon2025/(.*)", "destination": "https://erc1202-talks.vercel.app/$1" }
   ]
 }
