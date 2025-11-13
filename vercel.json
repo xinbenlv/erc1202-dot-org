@@ -1,10 +1,10 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
-    { "source": "/talks/devcon2025", "destination": "/talks/devcon2025/", "permanent": false }
+    { "source": "/talks", "destination": "/talks/", "permanent": false }
   ],
   "rewrites": [
-    { "source": "/talks/devcon2025", "destination": "https://erc1202-talks.vercel.app" },
-    { "source": "/talks/devcon2025/(.*)", "destination": "https://erc1202-talks.vercel.app/$1" }
+    { "source": "/talks", "destination": "https://erc1202-talks.vercel.app" },
+    { "source": "/talks/(.*)", "destination": "https://erc1202-talks.vercel.app/$1" }
   ]
 }
