@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
-    { "source": "/talks", "destination": "https://talks.erc1202.org" },
-    { "source": "/talks/(.*)", "destination": "https://talks.erc1202.org/$1" }
+    { "source": "/talks", "destination": "https://erc1202-talks.vercel.app" },
+    { "source": "/talks/(.*)", "destination": "https://erc1202-talks.vercel.app/$1" }
   ]
 }
