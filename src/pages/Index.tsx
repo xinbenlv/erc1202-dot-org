@@ -40,7 +40,9 @@ const Index = () => {
       <header className="container mx-auto px-6 py-12">
         <div className="text-center space-y-6">
           <img src={logo} alt="ERC-1202 Logo" className="w-32 h-32 mx-auto" />
-          <h1 className="text-3xl md:text-4xl font-bold text-foreground">ERC-1202 Voting Standard Working Group</h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+            ERC-1202 Voting Standard Working Group
+          </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             A standardized interface for voting systems on the Ethereum blockchain
           </p>
@@ -48,13 +50,6 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-6 py-8 md:py-16">
-        <div className="max-w-4xl mx-auto text-center space-y-6">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-            Learn, use, build and contribute, today!
-          </h2>
-        </div>
-      </section>
 
       {/* CTA Cards */}
       <section className="container mx-auto px-6 pb-24">
