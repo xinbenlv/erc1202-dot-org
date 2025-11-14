@@ -12,14 +12,14 @@ const Index = () => {
       gradient: "from-primary to-primary/80",
     },
     {
-      title: "Subscribe to Mailing List",
+      title: "Join WG mailing list",
       description: "Stay updated with the latest discussions and announcements",
       icon: Users,
       href: "https://groups.google.com/g/erc1202",
       gradient: "from-accent to-accent/80",
     },
     {
-      title: "Join Telegram",
+      title: "Join WG Telegram",
       description: "Connect with the community and contribute to the conversation",
       icon: MessageCircle,
       href: "https://t.me/erc1202wg",
@@ -39,27 +39,20 @@ const Index = () => {
       {/* Header */}
       <header className="container mx-auto px-6 py-12">
         <div className="text-center space-y-6">
-          <img 
-            src={logo} 
-            alt="ERC-1202 Logo" 
-            className="w-32 h-32 mx-auto"
-          />
-          <h1 className="text-3xl md:text-4xl font-bold text-foreground">ERC-1202</h1>
+          <img src={logo} alt="ERC-1202 Logo" className="w-32 h-32 mx-auto" />
+          <h1 className="text-3xl md:text-4xl font-bold text-foreground">ERC-1202 Voting Standard Working Group</h1>
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            A standardized interface for voting systems on the Ethereum blockchain
+          </p>
         </div>
       </header>
 
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-8 md:py-16">
         <div className="max-w-4xl mx-auto text-center space-y-6">
-          <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-4">
-            <span className="text-sm font-medium text-primary">Ethereum Voting Standard</span>
-          </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-            Voting Standard Working Group
+            Join the movement for a world with better governance and trust
           </h2>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            A standardized interface for voting systems on the Ethereum blockchain
-          </p>
         </div>
       </section>
 
@@ -67,24 +60,18 @@ const Index = () => {
       <section className="container mx-auto px-6 pb-24">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {ctaCards.map((card, index) => (
-            <a
-              key={index}
-              href={card.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group"
-            >
+            <a key={index} href={card.href} target="_blank" rel="noopener noreferrer" className="group">
               <Card className="h-full p-8 bg-card hover:bg-card/80 border-border hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 cursor-pointer">
                 <div className="flex flex-col items-center text-center space-y-4">
-                  <div className={`p-4 rounded-2xl bg-gradient-to-br ${card.gradient} shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                  <div
+                    className={`p-4 rounded-2xl bg-gradient-to-br ${card.gradient} shadow-lg group-hover:scale-110 transition-transform duration-300`}
+                  >
                     <card.icon className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-xl font-semibold text-card-foreground group-hover:text-primary transition-colors">
                     {card.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {card.description}
-                  </p>
+                  <p className="text-muted-foreground leading-relaxed">{card.description}</p>
                 </div>
               </Card>
             </a>
@@ -98,27 +85,27 @@ const Index = () => {
           <div className="flex flex-col items-center space-y-6">
             {/* Social Media Icons */}
             <div className="flex items-center gap-6">
-              <a 
-                href="https://x.com/erc_1202" 
-                target="_blank" 
+              <a
+                href="https://x.com/erc_1202"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Follow us on X (Twitter)"
               >
                 <Twitter className="w-6 h-6" />
               </a>
-              <a 
-                href="https://t.me/erc1202wg" 
-                target="_blank" 
+              <a
+                href="https://t.me/erc1202wg"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Join our Telegram"
               >
                 <Send className="w-6 h-6" />
               </a>
-              <a 
-                href="https://discord.gg/EMNfuQQppv" 
-                target="_blank" 
+              <a
+                href="https://discord.gg/EMNfuQQppv"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Join our Discord"
@@ -126,10 +113,10 @@ const Index = () => {
                 <MessageSquare className="w-6 h-6" />
               </a>
             </div>
-            
+
             {/* Copyright */}
             <div className="text-center text-sm text-muted-foreground">
-              <p>© 2024 ERC-1202 Working Group. All rights reserved.</p>
+              <p>© 2018-2025 ERC-1202 Working Group. All rights reserved.</p>
             </div>
           </div>
         </div>
