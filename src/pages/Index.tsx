@@ -44,7 +44,7 @@ const Index = () => {
             ERC-1202 Voting Standard Working Group
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            A standardized interface for voting systems on the Ethereum blockchain
+            A standardized interface for voting systems for Ethereum and EVM blockchains
           </p>
         </div>
       </header>
