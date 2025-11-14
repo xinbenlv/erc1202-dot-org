@@ -1,8 +1,25 @@
 import { Card } from "@/components/ui/card";
-import { FileText, Users, MessageCircle, Presentation, Twitter, Send, MessageSquare } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { FileText, Users, MessageCircle, Presentation, Twitter, Send, MessageSquare, Mail, Github } from "lucide-react";
 import logo from "@/assets/erc1202-logo.png";
 
 const Index = () => {
+  const supportersAndContributors = [
+    {
+      name: "Victor Zhou",
+      email: "erc1202@zzn.im",
+      github: "github.com/xinbenlv",
+      description: "EIP/ERC Editor, Lead Author of ERC-1202",
+      image: "https://b.zzn.im/assets/images/zzn-pic.jpeg",
+    },
+    {
+      name: "William Entriken",
+      github: "github.com/fulldecent",
+      description: "Lead Author of ERC-721",
+      image: "https://avatars.githubusercontent.com/u/382183?v=4",
+    }
+  ];
+
   const ctaCards = [
     {
       title: "Read the Current Draft",
@@ -70,6 +87,51 @@ const Index = () => {
                 </div>
               </Card>
             </a>
+          ))}
+        </div>
+      </section>
+
+      {/* Supporters and Contributors */}
+      <section className="container mx-auto px-6 pb-24">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">
+          Supporters & Contributors
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          {supportersAndContributors.map((person, index) => (
+            <Card key={index} className="p-6 bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+              <div className="flex items-start gap-4">
+                <Avatar className="w-16 h-16">
+                  <AvatarImage src={person.image} alt={person.name} />
+                  <AvatarFallback>{person.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                </Avatar>
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-card-foreground mb-1">{person.name}</h3>
+                  <p className="text-sm text-muted-foreground mb-3">{person.description}</p>
+                  <div className="flex gap-3">
+                    {person.email && (
+                      <a
+                        href={`mailto:${person.email}`}
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                        aria-label={`Email ${person.name}`}
+                      >
+                        <Mail className="w-4 h-4" />
+                      </a>
+                    )}
+                    {person.github && (
+                      <a
+                        href={`https://${person.github}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                        aria-label={`${person.name}'s GitHub`}
+                      >
+                        <Github className="w-4 h-4" />
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </Card>
           ))}
         </div>
       </section>
