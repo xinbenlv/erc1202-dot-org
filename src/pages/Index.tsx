@@ -99,7 +99,7 @@ const Index = () => {
             {/* Social Media Icons */}
             <div className="flex items-center gap-6">
               <a 
-                href="https://twitter.com/erc1202" 
+                href="https://x.com/erc_1202" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -117,7 +117,7 @@ const Index = () => {
                 <Send className="w-6 h-6" />
               </a>
               <a 
-                href="https://discord.gg/erc1202" 
+                href="https://discord.gg/EMNfuQQppv" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
