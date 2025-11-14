@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { FileText, Users, MessageCircle } from "lucide-react";
+import { FileText, Users, MessageCircle, Presentation, Twitter, Send, MessageSquare } from "lucide-react";
 import logo from "@/assets/erc1202-logo.png";
 
 const Index = () => {
@@ -24,6 +24,13 @@ const Index = () => {
       icon: MessageCircle,
       href: "https://t.me/erc1202wg",
       gradient: "from-primary to-accent",
+    },
+    {
+      title: "Tech Talks",
+      description: "Read the latest tech talks from ERC-1202 WG",
+      icon: Presentation,
+      href: "https://erc1202.org/talks",
+      gradient: "from-accent to-primary",
     },
   ];
 
@@ -58,7 +65,7 @@ const Index = () => {
 
       {/* CTA Cards */}
       <section className="container mx-auto px-6 pb-24">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {ctaCards.map((card, index) => (
             <a
               key={index}
@@ -86,9 +93,45 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="container mx-auto px-6 py-8 border-t border-border">
-        <div className="text-center text-sm text-muted-foreground">
-          <p>© 2024 ERC-1202 Working Group. All rights reserved.</p>
+      <footer className="container mx-auto px-6 py-12 border-t border-border">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col items-center space-y-6">
+            {/* Social Media Icons */}
+            <div className="flex items-center gap-6">
+              <a 
+                href="https://twitter.com/erc1202" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="Follow us on X (Twitter)"
+              >
+                <Twitter className="w-6 h-6" />
+              </a>
+              <a 
+                href="https://t.me/erc1202wg" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="Join our Telegram"
+              >
+                <Send className="w-6 h-6" />
+              </a>
+              <a 
+                href="https://discord.gg/erc1202" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="Join our Discord"
+              >
+                <MessageSquare className="w-6 h-6" />
+              </a>
+            </div>
+            
+            {/* Copyright */}
+            <div className="text-center text-sm text-muted-foreground">
+              <p>© 2024 ERC-1202 Working Group. All rights reserved.</p>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
