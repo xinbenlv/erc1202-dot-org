@@ -223,7 +223,23 @@ const Index = () => {
       {/* Footer */}
       <footer className="container mx-auto px-6 py-12 border-t border-border">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col items-center space-y-6">
+          <div className="flex flex-col items-center space-y-8">
+            {/* Email Subscription */}
+            <div className="w-full max-w-md">
+              <h3 className="text-xl font-semibold text-center text-foreground mb-4">Subscribe to Updates</h3>
+              <div className="rounded-lg overflow-hidden border border-border bg-card shadow-sm">
+                <iframe 
+                  src="https://erc1202.substack.com/embed" 
+                  width="100%" 
+                  height="200"
+                  className="w-full"
+                  frameBorder="0" 
+                  scrolling="no"
+                  title="Subscribe to ERC-1202 Newsletter"
+                />
+              </div>
+            </div>
+
             {/* Social Media Icons */}
             <div className="flex items-center gap-6">
               <a
