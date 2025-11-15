@@ -1,6 +1,13 @@
 {
-  "name": "vite_react_shadcn_ts",
-  "private": true,
+  "name": "erc1202-dot-org",
+  "description": "Official website of the ERC-1202 Voting Standard Working Group",
+  "author": "ERC-1202 Working Group",
+  "license": "MIT",
+  "homepage": "https://erc1202.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xinbenlv/erc1202-dot-org"
+  },
   "version": "0.0.0",
   "type": "module",
   "scripts": {

@@ -26,16 +26,40 @@ const Index = () => {
     {
       name: "Victor Zhou",
       email: "erc1202@zzn.im",
-      github: "github.com/xinbenlv",
+      github: "xinbenlv",
       description: "EIP/ERC Editor, Lead Author of ERC-1202",
       image: "https://b.zzn.im/assets/images/zzn-pic.jpeg",
     },
     {
       name: "William Entriken",
-      github: "github.com/fulldecent",
+      github: "fulldecent",
       description: "Lead Author of ERC-721",
       image: "https://avatars.githubusercontent.com/u/382183?v=4",
     },
+    {
+      name: "Nick Mudge",
+      github: "mudgen",
+      description: "Author of ERC-2535 Diamonds, Multi-Facet Proxy",
+      image: "https://avatars.githubusercontent.com/u/49092?v=4",
+    },
+    {
+      name: "Premm.eth",
+      github: "premm.eth",
+      description: "Co-founder of Unruggable Labs, ENS Service Provider",
+      image: "https://avatars.githubusercontent.com/u/3857985?v=4",
+    },
+    {
+      name: "Evan Botello",
+      github: "evbots",
+      description: "",
+      image: "https://avatars.githubusercontent.com/u/3102036?v=4",
+    },
+    {
+      name: "Yin Xu",
+      github: "yingogobot",
+      description: "",
+      image: "https://avatars.githubusercontent.com/u/4603314?v=4",
+    }
   ];
 
   const ctaCards = [
@@ -179,7 +203,7 @@ const Index = () => {
                     )}
                     {person.github && (
                       <a
-                        href={`https://${person.github}`}
+                        href={`https://github.com/${person.github}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-muted-foreground hover:text-primary transition-colors"
