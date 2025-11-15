@@ -108,7 +108,22 @@ const Index = () => {
         </div>
       </header>
 
-      {/* Hero Section */}
+      {/* Newsletter Subscription */}
+      <section className="container mx-auto px-6 pb-16">
+        <div className="max-w-md mx-auto">
+          <div className="rounded-lg overflow-hidden border border-border bg-card shadow-lg">
+            <iframe 
+              src="https://erc1202.substack.com/embed" 
+              width="100%" 
+              height="200"
+              className="w-full"
+              frameBorder="0" 
+              scrolling="no"
+              title="Subscribe to ERC-1202 Newsletter"
+            />
+          </div>
+        </div>
+      </section>
 
       {/* CTA Cards */}
       <section className="container mx-auto px-6 pb-24">
