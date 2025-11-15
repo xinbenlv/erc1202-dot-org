@@ -145,7 +145,9 @@ const Index = () => {
       {/* Supporters and Contributors */}
       <section className="container mx-auto px-6 pb-24">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">Working Group</h2>
-        <p>co-authors, advisors, contributors and supporters</p>
+        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+          co-authors, advisors, contributors and supporters
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {supportersAndContributors.map((person, index) => (
             <Card
