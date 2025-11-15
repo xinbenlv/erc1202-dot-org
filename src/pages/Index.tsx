@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { FileText, Users, MessageCircle, Presentation, Twitter, Send, MessageSquare, Mail, Github } from "lucide-react";
+import { FileText, Users, MessageCircle, Presentation, Twitter, Send, MessageSquare, Mail, Github, BookOpen, Code, Smartphone, Shield, Wallet, Search, Vote, Palette } from "lucide-react";
 import logo from "@/assets/erc1202-logo.png";
 
 const Index = () => {
@@ -91,6 +91,38 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Call for Contributors */}
+      <section className="container mx-auto px-6 pb-24">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-4">
+          Call for Contributors
+        </h2>
+        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+          Experts, enthusiast, interns all welcome. Contributions will be public domain and MIT licensed.
+        </p>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
+          {[
+            { title: "Co-authors", icon: FileText },
+            { title: "Smart Contract Devs", icon: Code },
+            { title: "Web SDK Devs", icon: Code },
+            { title: "Mobile SDK Devs", icon: Smartphone },
+            { title: "Security Researcher", icon: Shield },
+            { title: "Wallets", icon: Wallet },
+            { title: "Blockchain Explorers", icon: Search },
+            { title: "Voting Interfaces", icon: Vote },
+            { title: "Designers", icon: Palette },
+          ].map((role, index) => (
+            <Card key={index} className="p-6 bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg group cursor-pointer">
+              <div className="flex flex-col items-center text-center space-y-3">
+                <div className="p-4 rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 group-hover:from-primary/20 group-hover:to-accent/20 transition-all duration-300">
+                  <role.icon className="w-8 h-8 text-primary" />
+                </div>
+                <h3 className="text-sm font-medium text-card-foreground">{role.title}</h3>
+              </div>
+            </Card>
+          ))}
+        </div>
+      </section>
+
       {/* Supporters and Contributors */}
       <section className="container mx-auto px-6 pb-24">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">
@@ -168,6 +200,15 @@ const Index = () => {
                 aria-label="Join our Discord"
               >
                 <MessageSquare className="w-6 h-6" />
+              </a>
+              <a
+                href="https://substack.com/@erc1202"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="Follow us on Substack"
+              >
+                <BookOpen className="w-6 h-6" />
               </a>
             </div>
 
