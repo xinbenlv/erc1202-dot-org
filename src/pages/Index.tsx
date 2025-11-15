@@ -1,6 +1,24 @@
 import { Card } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { FileText, Users, MessageCircle, Presentation, Twitter, Send, MessageSquare, Mail, Github, BookOpen, Code, Smartphone, Shield, Wallet, Search, Vote, Palette } from "lucide-react";
+import {
+  FileText,
+  Users,
+  MessageCircle,
+  Presentation,
+  Twitter,
+  Send,
+  MessageSquare,
+  Mail,
+  Github,
+  BookOpen,
+  Code,
+  Smartphone,
+  Shield,
+  Wallet,
+  Search,
+  Vote,
+  Palette,
+} from "lucide-react";
 import logo from "@/assets/erc1202-logo.png";
 
 const Index = () => {
@@ -17,7 +35,7 @@ const Index = () => {
       github: "github.com/fulldecent",
       description: "Lead Author of ERC-721",
       image: "https://avatars.githubusercontent.com/u/382183?v=4",
-    }
+    },
   ];
 
   const ctaCards = [
@@ -93,9 +111,7 @@ const Index = () => {
 
       {/* Call for Contributors */}
       <section className="container mx-auto px-6 pb-24">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-4">
-          Call for Contributors
-        </h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-4">Call for Contributors</h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
           Experts, enthusiast, interns all welcome. Contributions will be public domain and MIT licensed.
         </p>
@@ -111,7 +127,10 @@ const Index = () => {
             { title: "Voting Interfaces", icon: Vote },
             { title: "Designers", icon: Palette },
           ].map((role, index) => (
-            <Card key={index} className="p-6 bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg group cursor-pointer">
+            <Card
+              key={index}
+              className="p-6 bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg group cursor-pointer"
+            >
               <div className="flex flex-col items-center text-center space-y-3">
                 <div className="p-4 rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 group-hover:from-primary/20 group-hover:to-accent/20 transition-all duration-300">
                   <role.icon className="w-8 h-8 text-primary" />
@@ -125,16 +144,23 @@ const Index = () => {
 
       {/* Supporters and Contributors */}
       <section className="container mx-auto px-6 pb-24">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">
-          Supporters & Contributors
-        </h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">Working Group</h2>
+        <p>co-authors, advisors, contributors and supporters</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {supportersAndContributors.map((person, index) => (
-            <Card key={index} className="p-6 bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+            <Card
+              key={index}
+              className="p-6 bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg"
+            >
               <div className="flex items-start gap-4">
                 <Avatar className="w-16 h-16">
                   <AvatarImage src={person.image} alt={person.name} />
-                  <AvatarFallback>{person.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                  <AvatarFallback>
+                    {person.name
+                      .split(" ")
+                      .map((n) => n[0])
+                      .join("")}
+                  </AvatarFallback>
                 </Avatar>
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-card-foreground mb-1">{person.name}</h3>
