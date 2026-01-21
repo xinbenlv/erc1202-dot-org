@@ -297,7 +297,8 @@ const Index = () => {
 
             {/* Copyright */}
             <div className="text-center text-sm text-muted-foreground">
-              <p>© 2018-2025 ERC-1202 Working Group. All rights reserved.</p>
+              <p>© 2018-2025 ERC-1202 Working Group. All rights reserved. </p>
+              <p>Edit this site on <a href="https://github.com/xinbenlv/erc1202-dot-org?tab=readme-ov-file">Github</a> or <a></p>
             </div>
           </div>
         </div>
