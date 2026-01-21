@@ -59,7 +59,7 @@ const Index = () => {
       github: "yingogobot",
       description: "",
       image: "https://avatars.githubusercontent.com/u/4603314?v=4",
-    }
+    },
   ];
 
   const ctaCards = [
@@ -112,12 +112,12 @@ const Index = () => {
       <section className="container mx-auto px-6 pb-16">
         <div className="max-w-md mx-auto">
           <div className="rounded-lg overflow-hidden border border-border bg-card shadow-lg">
-            <iframe 
-              src="https://erc1202.substack.com/embed" 
-              width="100%" 
+            <iframe
+              src="https://erc1202.substack.com/embed"
+              width="100%"
               height="200"
               className="w-full"
-              frameBorder="0" 
+              frameBorder="0"
               scrolling="no"
               title="Subscribe to ERC-1202 Newsletter"
             />
@@ -243,12 +243,12 @@ const Index = () => {
             <div className="w-full max-w-md">
               <h3 className="text-xl font-semibold text-center text-foreground mb-4">Subscribe to Updates</h3>
               <div className="rounded-lg overflow-hidden border border-border bg-card shadow-sm">
-                <iframe 
-                  src="https://erc1202.substack.com/embed" 
-                  width="100%" 
+                <iframe
+                  src="https://erc1202.substack.com/embed"
+                  width="100%"
                   height="200"
                   className="w-full"
-                  frameBorder="0" 
+                  frameBorder="0"
                   scrolling="no"
                   title="Subscribe to ERC-1202 Newsletter"
                 />
@@ -298,7 +298,10 @@ const Index = () => {
             {/* Copyright */}
             <div className="text-center text-sm text-muted-foreground">
               <p>© 2018-2025 ERC-1202 Working Group. All rights reserved. </p>
-              <p>Edit this site on <a href="https://github.com/xinbenlv/erc1202-dot-org?tab=readme-ov-file">Github</a> or <a></p>
+              <p>
+                Edit this site on <a href="https://github.com/xinbenlv/erc1202-dot-org?tab=readme-ov-file">Github</a> or{" "}
+                <a href="https://lovable.dev/projects/f6f3875c-db27-496c-9207-31ceae901171?view=codeEditor">Lovable</a>
+              </p>
             </div>
           </div>
         </div>
