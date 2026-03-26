@@ -60,6 +60,12 @@ const Index = () => {
       description: "",
       image: "https://avatars.githubusercontent.com/u/4603314?v=4",
     },
+    {
+      name: "Lauren Dutton",
+      github: "",
+      description: "Integration @ Fhenix",
+      image: "/lauren-dutton.jpeg",
+    },
   ];
 
   const ctaCards = [
